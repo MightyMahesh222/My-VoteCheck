@@ -28,7 +28,7 @@ const Home=()=>{
 
     return(
         <div className='mainDiv'>
-            <h1>Election Department of India </h1>
+            <h1 className='mainHead'>Election Department of India </h1>
             <label htmlFor='date'>Select Your Birth Date</label>
             <form onSubmit={getData}>
                 <input id="date" onChange={changed} type="Date"/>
@@ -44,7 +44,7 @@ const Home=()=>{
                      : 
                     <div>
                          <p className='text notEligible'>You are not eligible to vote </p>
-                         <p className='message'>So sad that you are not over 18. You have to wait for some more years.</p>
+                         <p className='message'>So sad that you are under 18. You have to wait for some more years.</p>
 
                     </div> 
                      : null}

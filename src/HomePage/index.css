@@ -12,7 +12,9 @@
     box-sizing: border-box;
     background-image: linear-gradient(to right,rgb(236, 211, 211),rgb(239, 175, 231));
 }
-
+*{
+    letter-spacing: 1px;
+}
 label{
     font-size: 14px;
     font-weight: 600;
@@ -48,13 +50,31 @@ button{
 
 .eligible{
     color: green;
+    font-weight: 900;
 }
 
 .notEligible{
     color: red;
+    font-weight: 900;
 }
 
 .message{
     font-weight: 550;
     font-size: 14px;
+}
+
+.mainHead{
+    font-size: 30px;
+    text-shadow: 1px 1px 10px rgb(124, 117, 218);
+} 
+
+@media (max-width:480px) {
+    .mainHead{
+        font-size: 16px;
+    }
+
+    .mainDiv{
+        padding: 1px;
+        padding-top: 90px;
+    }
 }
